@@ -23,50 +23,48 @@ import {
   jobit,
   tripguide,
   threejs,
+  flutter,
+  sequelize,
+  puc,
+  trybe,
+  sql,
+  python,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Sobre mim",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Formação / Projetos",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contato",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Desenvolvedor Front-End",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Desenvolvedor Back-End",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Dsenvolvedor Mobile",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "JavaScript",
@@ -77,94 +75,77 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
   },
   {
+    name: "Sequelize",
+    icon: sequelize,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Ciência da Computação",
+    company_name: "PUC Minas",
+    icon: puc,
+    iconBg: "#fff",
+    date: "2019 - 2021 (5° Período)",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Arquitetura de Bando de dados.",
+      "Programação orientada a objetos (POO)",
+      "Complexidade de algoritmos",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Desenvolvimento FullStack",
+    company_name: "Trybe",
+    icon: trybe,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Nov 2022 - Nov 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, \
+      Front-end, Back-end, ciência da computação, metodologias ágeis e habilidades comportamentais.",
     ],
   },
 ];
@@ -198,7 +179,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Recipes App",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -216,7 +197,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/joaoboscodev/Recipes-App",
   },
   {
     name: "Job IT",

@@ -20,10 +20,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import flutter from "./tech/flutter.png";
+import sql from "./tech/sql.png";
+import python from "./tech/python.png";
+import sequelize from "./tech/sequelize.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
+import puc from "./company/puc.png";
+import trybe from "./company/trybe.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
@@ -44,6 +50,7 @@ export {
   figma,
   git,
   html,
+  sequelize,
   javascript,
   mongodb,
   nodejs,
@@ -55,7 +62,12 @@ export {
   meta,
   shopify,
   starbucks,
+  flutter,
+  sql,
+  puc,
+  python,
   tesla,
+  trybe,
   carrent,
   jobit,
   tripguide,
