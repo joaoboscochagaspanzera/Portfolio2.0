@@ -50,7 +50,7 @@ const About = () => {
         variants={fadeIn("", "", 0,1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Meus estudos me fizeram ser capaz de criar sites que funcionam em qualquer dispositivo (sites responsivos), 
+        Meus estudos me tornaram capaz de criar sites que funcionam em qualquer dispositivo (sites responsivos), 
         são seguros e carregam super rápido (sites performáticos). Estou sempre comprometido em oferecer a melhor 
         experiência possível aos usuários e sigo as práticas mais legais do mercado.
       </motion.p>

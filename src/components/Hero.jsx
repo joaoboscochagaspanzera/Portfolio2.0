@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { github, linkedin } from "../assets";
 
 const Hero = () => {
+  const shouldHideText = window.innerHeight < 600;
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -18,15 +19,46 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Olá, eu sou o <span className='text-[#915EFF]'>João Bosco</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-200`}>
-            Desenvolvedor FullStack
-          </p>
+          {/* Verifique a variável shouldHideText antes de renderizar o <p> */}
+          {!shouldHideText && (
+            <p className={`${styles.heroSubText} mt-10 text-white-200 leading-loose`}>
+              Programador apaixonado por transformar idéias em código. Especializado em várias linguagens e em busca de desafios. Meu objetivo é criar soluções tecnológicas inovadoras que tornem o mundo um lugar melhor. Explore meu portfólio e veja como posso contribuir para o seu próximo projeto.
+            </p>
+            
+          )}
+          {/* <div className="flex justify-center mr-20">
+            <div className='inset-0 flex mt-8 card-img_hover'>
+              <div
+                onClick={() => window.open('https://www.linkedin.com/in/joaoboscodev/', "_blank")}
+                className='bg-gradient-to-r from-blue-100 to-white w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={linkedin}
+                  alt='source code'
+                  className='w-8 object-contain white-bg'
+                />
+              </div>
+            </div>
+            <div className='flex mt-8 ml-4'>
+              <div
+                onClick={() => window.open('https://github.com/joaoboscodev', "_blank")}
+                className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-8 object-contain'
+                />
+              </div>
+            </div>
+          </div> */}
         </div>
+
       </div>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex flex-col items-center'>
+      {/* <div className='absolute xs:bottom-4 bottom-8 w-full flex flex-col items-center justify-center'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[60px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -41,7 +73,7 @@ const Hero = () => {
           </div>
         </a>
         <p className="flex justify-center mt-4">Clique para saber mais</p>
-      </div>
+      </div> */}
     </section>
   );
 };

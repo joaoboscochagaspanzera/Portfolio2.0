@@ -61,16 +61,17 @@ const Contact = () => {
           Caso não funcione favor enviar um email para joaoboscodev@gmail.com");
         }
       );
-  };
-
-  return (
-    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+    };
+    
+    return (
+      <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Entre em contato</p>
         <h3 className={styles.sectionHeadText}>Contato</h3>
+        <p className={styles.sectionSubText2}>joaoboscodev@gmail.com</p>
 
         <form
           ref={formRef}
@@ -112,6 +113,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg border-none font-medium'
             />
           </label>
+
 
           <button
             type='submit'

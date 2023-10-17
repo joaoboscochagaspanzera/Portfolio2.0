@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { github, linkedin } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
+  const shouldHideText = window.innerWidth < 973;
   return (
     <nav
       className={`${styles.paddingX} w-full flex
@@ -16,17 +18,44 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between
       items-center max-w-7x1 mx-auto">
-        <Link
-          to='/'
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt="logo" className="w-25 h-20 object-contain" />
-          <p className="text-white text-[24px] font-bold cursor-pointer"></p>
-        </Link>
+        <div className="flex">
+          <Link
+            to='/'
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img src={logo} alt="logo" className="w-25 h-20 object-contain" />
+            {!shouldHideText && (
+              <p className="text-white text-[24px] font-bold cursor-pointer">João Bosco</p>
+            )}
+          </Link>
+
+          <div
+            onClick={() => window.open('https://www.linkedin.com/in/joaoboscodev/', "_blank")}
+            className='flex justify-center cursor-pointer mr-4 ml-10'
+            >
+            <img
+              src={linkedin}
+              alt='source code'
+              className='w-8 object-contain white-bg'
+            />
+          </div>
+
+          <div
+            onClick={() => window.open('https://github.com/joaoboscodev', "_blank")}
+            className='flex justify-center items-center cursor-pointer'
+          >
+            <img
+              src={github}
+              alt='source code'
+              className='w-8 object-contain'
+            />
+          </div>
+        </div>
+
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (

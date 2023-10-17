@@ -20,6 +20,12 @@ import {
   tesla,
   shopify,
   carrent,
+  RecipesApp,
+  BlogsApi,
+  StoreManager,
+  OnlineStore,
+  TrybeTunes,
+  TestingLibrary,
   jobit,
   tripguide,
   threejs,
@@ -56,7 +62,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Dsenvolvedor Mobile",
+    title: "Desenvolvedor Full Stack",
+    icon: creator,
+  },
+  {
+    title: "Desenvolvedor Mobile",
     icon: backend,
   },
 ];
@@ -132,7 +142,7 @@ const experiences = [
     iconBg: "#fff",
     date: "2019 - 2021 (5° Período)",
     points: [
-      "Arquitetura de Bando de dados.",
+      "Arquitetura de Banco de dados.",
       "Programação orientada a objetos (POO)",
       "Complexidade de algoritmos",
     ],
@@ -181,65 +191,120 @@ const projects = [
   {
     name: "Recipes App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "App móvel em React.js que consome uma API para exibir diversas receitas de bebidas e comidas, fornece instruções e ingredientes para prepará-las. Também permite marcar suas receitas favoritas e compartilhá-las.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Testing library",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: RecipesApp,
     source_code_link: "https://github.com/joaoboscodev/Recipes-App",
   },
   {
-    name: "Job IT",
+    name: "Blogs Api",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Desenvolvi uma infraestrutura composta por uma API e um sistema de gerenciamento de banco de dados para a criação de um blog usando Node.js, com a utilização do Sequelize para fazer um CRUD de posts.",
     tags: [
       {
-        name: "react",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Express.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Sequelize",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: BlogsApi,
+    source_code_link: "https://github.com/joaoboscodev/blogsApiProject",
   },
   {
-    name: "Trip Guide",
+    name: "Online Store",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Projeto de uma loja online feita em grupo, utilizando React. Possui uma API extensa para renderizar produtos por categorias, enquanto aprimoramos habilidades de comunicação , trabalho em equipe e resolução de conflitos.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: OnlineStore,
+    source_code_link: "https://github.com/joaoboscodev/FrontendOnlineStore",
+  },
+  {
+    name: "Store Manager",
+    description:
+      "Projeto de gestão de produtos e vendas em Node.js e Sequelize, oferecendo controle com escalabilidade. É ideal para empresas simplificarem processos e tomarem decisões estratégicas.",
+    tags: [
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Sequelize",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: StoreManager,
+    source_code_link: "https://github.com/joaoboscodev/StoreManager",
+  },
+  {
+    name: "Trybe Tunes",
+    description:
+      "Desenvolvi um projeto individual com tecnologia React, semelhante ao Spotify, integrando uma API extensa de música. Construindo recursos como pesquisa de músicas e gerenciamento de favoritos.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: TrybeTunes,
+    source_code_link: "https://github.com/joaoboscodev/Trybetunes",
+  },
+  {
+    name: "React Testing Library",
+    description:
+      "Desenvolvi testes com Jest e Testing Library para renderização dos detalhes de um Pokémon, navegação para a página de detalhes, validação da URL e marcação de Pokémon como favoritos.",
+    tags: [
+      {
+        name: "Jest",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Testing Library",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: TestingLibrary,
+    source_code_link: "https://github.com/joaoboscodev/ReactTestingLibrary",
   },
 ];
 
