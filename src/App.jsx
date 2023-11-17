@@ -15,8 +15,10 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Works />
-        <div className='relative z-0'>
+        <div className='relative z-0' style={{ marginTop: '-400px' }}>
+          <Works />
+        </div>
+        <div className='relative z-0' style={{ marginTop: '-60px' }}>
           <Contact />
         </div>
       </div>

@@ -38,12 +38,16 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import RecipesApp from "./RecipesApp.png"
 import BlogsApi from "./BlogsApi.png";
+import TrybersAndDragons from "./TrybersAndDragons.png"
 import StoreManager from "./StoreManager.png";
 import OnlineStore from "./OnlineStore.png";
 import TrybeTunes from "./TrybeTunes.png";
 import TestingLibrary from "./TestingLibrary.png";
+import TrybeSmith from "./Trybesmith.png";
 
 export {
+  TrybersAndDragons,
+  TrybeSmith,
   logo,
   backend,
   creator,

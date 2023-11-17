@@ -22,6 +22,7 @@ import {
   carrent,
   RecipesApp,
   BlogsApi,
+  TrybersAndDragons,
   StoreManager,
   OnlineStore,
   TrybeTunes,
@@ -35,6 +36,7 @@ import {
   trybe,
   sql,
   python,
+  TrybeSmith,
 } from "../assets";
 
 export const navLinks = [
@@ -189,25 +191,54 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Recipes App",
+    name: "Trybers And Dragons",
     description:
-      "App móvel em React.js que consome uma API para exibir diversas receitas de bebidas e comidas, fornece instruções e ingredientes para prepará-las. Também permite marcar suas receitas favoritas e compartilhá-las.",
+      "Projeto em TypeScript, feito para aplicar princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).",
     tags: [
       {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Testing library",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
         color: "pink-text-gradient",
       },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
     ],
-    image: RecipesApp,
-    source_code_link: "https://github.com/joaoboscodev/Recipes-App",
+    image: TrybersAndDragons,
+    source_code_link: "https://github.com/joaoboscodev/TrybersAndDragons",
+  },
+  {
+    name: "TrybeSmith",
+    description:
+      "Projeto de uma API de loja de itens medievais, utilizando um banco de dados SQL, onde é possível executar cadastro, login e autenticação de pessoas usuárias, busca e cadastro de produtos e pedidos",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: TrybeSmith,
+    source_code_link: "https://github.com/joaoboscodev/trybesmithProject",
   },
   {
     name: "Blogs Api",
@@ -226,26 +257,13 @@ const projects = [
         name: "Sequelize",
         color: "pink-text-gradient",
       },
+      {
+        name: "SQL",
+        color: "blue-text-gradient",
+      },
     ],
     image: BlogsApi,
     source_code_link: "https://github.com/joaoboscodev/blogsApiProject",
-  },
-  {
-    name: "Online Store",
-    description:
-      "Projeto de uma loja online feita em grupo, utilizando React. Possui uma API extensa para renderizar produtos por categorias, enquanto aprimoramos habilidades de comunicação , trabalho em equipe e resolução de conflitos.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "green-text-gradient",
-      },
-    ],
-    image: OnlineStore,
-    source_code_link: "https://github.com/joaoboscodev/FrontendOnlineStore",
   },
   {
     name: "Store Manager",
@@ -267,6 +285,44 @@ const projects = [
     ],
     image: StoreManager,
     source_code_link: "https://github.com/joaoboscodev/StoreManager",
+  },
+  {
+    name: "Recipes App",
+    description:
+      "App móvel em React.js que consome uma API para exibir diversas receitas de bebidas e comidas, fornece instruções e ingredientes para prepará-las. Também permite marcar suas receitas favoritas e compartilhá-las.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Testing library",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: RecipesApp,
+    source_code_link: "https://github.com/joaoboscodev/Recipes-App",
+  },
+  {
+    name: "Online Store",
+    description:
+      "Projeto de uma loja online feita em grupo, utilizando React. Possui uma API extensa para renderizar produtos por categorias, enquanto aprimoramos habilidades de comunicação , trabalho em equipe e resolução de conflitos.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: OnlineStore,
+    source_code_link: "https://github.com/joaoboscodev/FrontendOnlineStore",
   },
   {
     name: "Trybe Tunes",
