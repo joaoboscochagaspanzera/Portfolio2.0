@@ -24,7 +24,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         if(windowWidth < 376)
         setCardClass2('relative w-full h-[71px]');
       }
-    };
+  };
 
     window.addEventListener('resize', updateCardClass);
 
@@ -38,7 +38,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
   return (
 <div>
 
-  {window.innerWidth <= 875 ? (
+  {window.innerWidth <= 1263 ? (
     <>
     <div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt
@@ -145,8 +145,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 const Works = () => {
   return (
-    <div style={{ marginTop: '350px' }}>
-      {window.innerWidth <= 875 ? (
+    <div style={{ marginTop: '360px' }}>
+      {window.innerWidth <= 1263 ? (
      <>
      <div>
        <p className={`${styles.sectionSubText} `}>Principais projetos</p>

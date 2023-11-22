@@ -37,6 +37,10 @@ import {
   sql,
   python,
   TrybeSmith,
+  TalkerManager,
+  TrybeFutebolClube,
+  TrybeWallet,
+  Tryunfo,
 } from "../assets";
 
 export const navLinks = [
@@ -191,9 +195,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Trybers And Dragons",
+    name: "Trybe Futebol Clube",
     description:
-      "Projeto em TypeScript, feito para aplicar princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).",
+      "Projeto que aborda: docker, modelagem de dados (MySQL, Sequelize), API REST em TypeScript com Node.js e Express. Bibliotecas: JWT para autenticação, bcrypt para hashing de senhas. Seguindo padrões de POO.",
     tags: [
       {
         name: "TypeScript",
@@ -206,6 +210,31 @@ const projects = [
       {
         name: "MySQL",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "green-text-gradient",
+      },
+    ],
+    image: TrybeFutebolClube,
+    source_code_link: "https://github.com/joaoboscodev/TrybeFutebolClubeFullStack",
+  },
+  {
+    name: "Trybers And Dragons",
+    description:
+      "Projeto em TypeScript, feito para aplicar princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
       },
       {
         name: "Express",
@@ -222,23 +251,23 @@ const projects = [
     tags: [
       {
         name: "TypeScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MySQL",
         color: "pink-text-gradient",
       },
       {
-        name: "Express",
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
         color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
       },
     ],
     image: TrybeSmith,
-    source_code_link: "https://github.com/joaoboscodev/trybesmithProject",
+    source_code_link: "https://github.com/joaoboscodev/Trybesmith",
   },
   {
     name: "Blogs Api",
@@ -361,6 +390,65 @@ const projects = [
     ],
     image: TestingLibrary,
     source_code_link: "https://github.com/joaoboscodev/ReactTestingLibrary",
+  },
+  {
+    name: "Talker Manager",
+    description:
+      "Projeto onde foi desenvolvido uma API de um CRUD (Create, Read, Update e Delete) de palestrantes (talkers), aprendendo como criar endpoints para ler e escrever arquivos usando o módulo fs do Node.js.",
+    tags: [
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: TalkerManager,
+    source_code_link: "https://github.com/joaoboscodev/TalkerManager",
+  },
+  {
+    name: "Tryunfo",
+    description:
+      "Projeto jogo estilo Super Trunfo. Destaques: manipulação de cartas, visualização do baralho e aplicação de conceitos como leitura/atualização de estado, eventos, renderização condicional e formulários JSX.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JSX",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Tryunfo,
+    source_code_link: "https://github.com/joaoboscodev/Tryunfo",
+  },
+  {
+    name: "TrybeWallet",
+    description:
+      "Projeto onde aprendi gerenciar stores, reducers e actions no Redux. Conectei o estado global aos componentes React, implementando funcionalidades de adição, remoção e edição de gastos.",
+    tags: [
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: TrybeWallet,
+    source_code_link: "https://github.com/joaoboscodev/TrybeWallet",
   },
 ];
 

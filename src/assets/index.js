@@ -44,8 +44,16 @@ import OnlineStore from "./OnlineStore.png";
 import TrybeTunes from "./TrybeTunes.png";
 import TestingLibrary from "./TestingLibrary.png";
 import TrybeSmith from "./Trybesmith.png";
+import TalkerManager from "./talkersManager.png";
+import TrybeFutebolClube from "./TFC.png";
+import TrybeWallet from "./TrybeWallet.png";
+import Tryunfo from "./Tryunfo.png";
 
 export {
+  TrybeWallet,
+  Tryunfo,
+  TrybeFutebolClube,
+  TalkerManager,
   TrybersAndDragons,
   TrybeSmith,
   logo,
